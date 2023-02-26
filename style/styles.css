@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "game";
+}
+@font-face {
+  font-family: "game";
+  src: url("../fonts/MP16SC.ttf");
+}
+body {
+  position: relative;
+  background-color: #222831;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+header div {
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -2px 3px #141416;
+}
+.figuras {
+  box-shadow: none;
+}
+.figuras img {
+  height: 10vw;
+}
+.turno {
+  height: 8vh;
+  background-color: #00adb5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  width: 40vw;
+}
+.turno img {
+  margin-right: 10%;
+  height: 50%;
+}
+.turno p {
+  margin-left: 5%;
+}
+.reiniciar {
+  border: no;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00adb5;
+  height: 8vh;
+  width: 8vh;
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -2px 3px #141416;
+}
+.reiniciar img {
+  height: 70%;
+}
+.tabla {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tabla button {
+  border: none;
+  box-shadow: -2px 3px #141416;
+  position: relative;
+  border-radius: 10px;
+  display: inline-flex;
+  height: 30vw;
+  width: 30vw;
+  background-color: #393e46;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tabla img {
+  position: absolute;
+  height: 80%;
+}
+footer {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+footer div {
+  box-shadow: -2px 3px #141416;
+  margin: 10px;
+
+  background-color: #00adb5;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  width: 28vw;
+  height: 13vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer img {
+  height: 20%;
+  margin-right: 10px;
+}
+
+footer p {
+  color: #eeeeee;
+  margin: 0;
+}
+
+.contadorG {
+  text-align: center;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  top: 50%;
+  background-color: #00adb5;
+  flex-wrap: wrap;
+}
+.fondo_transparente {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.226);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.modal button {
+  position: relative;
+  width: 30%;
+  height: 15%;
+  background-color: #393e46;
+  border-radius: 10px;
+  color: #eeeeee;
+  border: 0;
+}
+#ganador {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  * {
+    font-size: 1.5vw;
+  }
+  header {
+    width: 80%;
+  }
+  .figuras img {
+    height: 5vw;
+  }
+  .tabla {
+    margin-top: 3%;
+    display: grid;
+    grid-template-rows: 9vw 9vw 9vw;
+    grid-template-columns: 9vw 9vw 9vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabla button {
+    height: 8vw;
+    width: 8vw;
+  }
+  footer {
+    margin-top: 5%;
+    width: 70%;
+  }
+  footer div {
+    width: 12vw;
+    height: 4vw;
+  }
+  footer img {
+    height: 30%;
+    margin-right: 10px;
+  }
+}

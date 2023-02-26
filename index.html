@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="figuras">
+        <img src="imgs/O.png" /> <img src="imgs/X.png" />
+      </div>
+      <div class="turno">
+        <img src="imgs/O.png" />Turno
+        <p id="contador">0</p>
+      </div>
+      <button id="reset" class="reiniciar"><img src="imgs/reset.png" /></button>
+    </header>
+    <div class="tabla">
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+      <button class="boton"></button>
+    </div>
+    <div class="fondo_transparente" id="fondo"></div>
+    <div class="modal" id="alerta">
+      <p id="ganador"></p>
+      <button id="continuar">Continuar</button>
+    </div>
+    <footer>
+      <div class="tu">
+        <img src="imgs/O.png" />
+        <p>you</p>
+        <p class="contadorG">0</p>
+      </div>
+      <div class="turnos">
+        <p>Partida</p>
+        <p class="contadorG">0</p>
+      </div>
+      <div class="her">
+        <img src="imgs/X.png" />
+        <p>two</p>
+        <p class="contadorG">0</p>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts/game.js"></script>
+</html>
