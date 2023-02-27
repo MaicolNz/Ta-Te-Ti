@@ -49,7 +49,7 @@ header div {
   margin-left: 5%;
 }
 .reiniciar {
-  border: no;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
